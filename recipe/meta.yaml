@@ -11,18 +11,18 @@ source:
   sha256: d435f21b6f74ba42669e390d43a3b6ab401ec3a9420e7fb13d7971a7a71c3c0e
 
 build:
-  number: 9
+  number: 10
   skip: True   # [win]
 
 requirements:
   build:
     - cmake
-    - boost-cpp 1.65.1
+    - boost-cpp 1.66.0
     - netcdf-cxx4 4.3.*
     - shapelib
 
   run:
-    - boost-cpp 1.65.1
+    - boost-cpp 1.66.0
     - netcdf-cxx4 4.3.*
     - shapelib
 
