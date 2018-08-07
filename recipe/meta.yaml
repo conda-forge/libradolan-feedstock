@@ -11,19 +11,22 @@ source:
   sha256: d435f21b6f74ba42669e390d43a3b6ab401ec3a9420e7fb13d7971a7a71c3c0e
 
 build:
-  number: 10
+  number: 11
   skip: True   # [win]
 
 requirements:
   build:
     - cmake
-    - boost-cpp 1.66.0
-    - netcdf-cxx4 4.3.*
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - boost-cpp
+    - netcdf-cxx4
     - shapelib
 
   run:
-    - boost-cpp 1.66.0
-    - netcdf-cxx4 4.3.*
+    - boost-cpp
+    - netcdf-cxx4
     - shapelib
 
 test:

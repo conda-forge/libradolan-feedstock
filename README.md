@@ -14,14 +14,16 @@ Summary: C++ library for reading and working with the RADOLAN data format of the
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/libradolan-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/libradolan-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/libradolan-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/libradolan-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/libradolan-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/libradolan-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/libradolan-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/libradolan-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/libradolan/badges/version.svg)](https://anaconda.org/conda-forge/libradolan)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/libradolan/badges/downloads.svg)](https://anaconda.org/conda-forge/libradolan)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-libradolan-green.svg)](https://anaconda.org/conda-forge/libradolan) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/libradolan.svg)](https://anaconda.org/conda-forge/libradolan) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/libradolan.svg)](https://anaconda.org/conda-forge/libradolan) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/libradolan.svg)](https://anaconda.org/conda-forge/libradolan) |
 
 Installing libradolan
 =====================
