@@ -10,7 +10,7 @@ source:
   sha256: 650ffcdd5c62cfdfe54b2ebb3b868d674466e28e679e5db01305a790eabb1bad
 
 build:
-  number: 0
+  number: 1
   skip: True   # [win]
 
 requirements:
@@ -19,12 +19,12 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - boost-cpp <=1.69.0
+    - boost-cpp
     - netcdf-cxx4
     - shapelib
 
   run:
-    - boost-cpp <=1.69.0
+    - boost-cpp
     - netcdf-cxx4
     - shapelib
 
