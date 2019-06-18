@@ -1,7 +1,5 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
-boost_cpp:
-- 1.70.0
 c_compiler:
 - clang
 c_compiler_version:
@@ -21,7 +19,5 @@ macos_min_version:
 netcdf_cxx4:
 - '4.3'
 pin_run_as_build:
-  boost-cpp:
-    max_pin: x.x.x
   netcdf-cxx4:
     max_pin: x.x
