@@ -1,5 +1,4 @@
-{% set version = "1.2.0" %}
-{% set commit = "131684d7d20f4e93dc9e829a74962d75e7ff78fa" %}
+{% set version = "1.2.1" %}
 
 package:
   name: libradolan
@@ -7,11 +6,11 @@ package:
 
 source:
   fn: libradolan-{{ version }}.tar.gz
-  url: https://github.com/meteo-ubonn/radolan/archive/{{ commit }}.tar.gz
-  sha256: d435f21b6f74ba42669e390d43a3b6ab401ec3a9420e7fb13d7971a7a71c3c0e
+  url: https://github.com/meteo-ubonn/radolan/archive/{{ version }}.tar.gz
+  sha256: 650ffcdd5c62cfdfe54b2ebb3b868d674466e28e679e5db01305a790eabb1bad
 
 build:
-  number: 12
+  number: 0
   skip: True   # [win]
 
 requirements:
@@ -20,12 +19,12 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - boost-cpp
+    - boost-cpp <=1.69.0
     - netcdf-cxx4
     - shapelib
 
   run:
-    - boost-cpp
+    - boost-cpp <=1.69.0
     - netcdf-cxx4
     - shapelib
 
