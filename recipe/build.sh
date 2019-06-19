@@ -11,7 +11,8 @@ fi
 
 
 mkdir build_libradolan && cd build_libradolan
-cmake -D CMAKE_INSTALL_PREFIX=$PREFIX \
+cmake -DBoost_NO_BOOST_CMAKE=ON \
+      -D CMAKE_INSTALL_PREFIX=$PREFIX \
       -D WITH_TESTS=YES \
       $SRC_DIR
 
