@@ -10,7 +10,7 @@ source:
   sha256: 650ffcdd5c62cfdfe54b2ebb3b868d674466e28e679e5db01305a790eabb1bad
 
 build:
-  number: 1
+  number: 2
   skip: True   # [win]
 
 requirements:
@@ -42,6 +42,7 @@ test:
 about:
   home: http://meteo-ubonn.github.io/radolan/
   license: MIT
+  license_file: LICENSE
   summary: 'C++ library for reading and working with the RADOLAN data format of the German Weather Service (DWD).'
 
 extra:
