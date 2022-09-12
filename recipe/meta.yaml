@@ -10,12 +10,13 @@ source:
   sha256: 650ffcdd5c62cfdfe54b2ebb3b868d674466e28e679e5db01305a790eabb1bad
 
 build:
-  number: 3
+  number: 4
   skip: True   # [win]
 
 requirements:
   build:
     - cmake
+    - make
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
@@ -36,8 +37,6 @@ test:
     - radolan2netcdf --version
     - radolan2netcdf --endianess
     - radolan2shapefile --version
-    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
-    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
 about:
   home: http://meteo-ubonn.github.io/radolan/
