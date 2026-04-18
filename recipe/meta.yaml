@@ -24,7 +24,7 @@ requirements:
     - libboost-devel
     - netcdf-cxx4
     - shapelib
-
+    - zlib
   run:
     - netcdf-cxx4
     - shapelib
