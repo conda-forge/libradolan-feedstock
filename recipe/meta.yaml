@@ -10,12 +10,12 @@ source:
   sha256: 650ffcdd5c62cfdfe54b2ebb3b868d674466e28e679e5db01305a790eabb1bad
 
 build:
-  number: 7
+  number: 8
   skip: True   # [win]
 
 requirements:
   build:
-    - cmake
+    - cmake <4
     - make
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
@@ -24,7 +24,7 @@ requirements:
     - libboost-devel
     - netcdf-cxx4
     - shapelib
-
+    - zlib
   run:
     - netcdf-cxx4
     - shapelib
